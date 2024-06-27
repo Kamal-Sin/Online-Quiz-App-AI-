@@ -1,0 +1,310 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   height: 100%;
+   width: 100%;
+}
+
+.delius-swash-caps-regular {
+   font-family: "Delius Swash Caps", cursive;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.header {
+   background: #0f2027; /* fallback for old browsers */
+   background: -webkit-linear-gradient(
+      to top,
+      #2c5364,
+      #203a43,
+      #0f2027
+   ); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(
+      to top,
+      #2c5364,
+      #203a43,
+      #0f2027
+   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   position: sticky;
+   top: 0;
+   width: 100%;
+   z-index: 100;
+}
+
+.app-title {
+   color: #ffc92a;
+   padding: 15px 40px 0 40px;
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   justify-content: space-between;
+}
+
+.app-title h1 {
+   font-weight: 900;
+   font-size: 40px;
+   font-family: "Delius Swash Caps";
+   text-transform: capitalize;
+}
+
+.app-title button {
+   display: none;
+   background-color: white;
+   margin: auto 10px;
+   border-radius: 10px;
+   height: 40px;
+   width: 40px;
+}
+
+.app-title img {
+   height: 25px;
+   width: 25px;
+}
+
+.app-navbar {
+   display: flex;
+   justify-content: space-between;
+}
+
+.app-navbar a,
+.app-navbar ul {
+   color: brown;
+   text-decoration: none;
+   list-style: none;
+}
+
+.app-navbar ul {
+   display: flex;
+   padding-left: 50px;
+   padding-bottom: 20px;
+   padding: 8px 0 20px 50px;
+}
+
+.app-navbar li {
+   font-size: 23px;
+   margin: 0px 30px 0 0;
+   padding: 0;
+}
+
+.app-navbar li a:hover {
+   color: slategrey;
+}
+
+.app-navbar li.active a {
+   color: slategray;
+}
+
+.app-navbar h3 {
+   color: white;
+   font-size: 23px;
+   margin-right: 40px;
+}
+
+.app-navbar h3 a:hover {
+   color: slateblue;
+   text-decoration: underline;
+}
+
+.body {
+   background: #f7f8f8; /* fallback for old browsers */
+   background: -webkit-linear-gradient(to top, #acbb78, #f7f8f8); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(
+      to top,
+      #acbb78,
+      #f7f8f8
+   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   display: flex;
+   flex-grow: 20px;
+   justify-content: space-between;
+}
+.audiowide-regular {
+   font-family: "Audiowide", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+.body-content {
+   width: 45%;
+   padding: 40px;
+}
+.content h3 {
+   color: #2c5364;
+   font-family: "Audiowide";
+   font-size: 40px;
+}
+
+.content p {
+   color: rgb(13, 104, 107);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 23px;
+}
+.body-image {
+   width: 50%;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+.body-image img {
+   height: 60%;
+   width: 80%;
+   margin: auto;
+}
+@media (max-width: 600px) {
+   .app-title button {
+      display: block;
+   }
+   .app-navbar {
+      display: none;
+   }
+}
+
+.login-form {
+   top: 0px;
+   left: 0px;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   z-index: 1000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(5px);
+}
+
+.login-form form {
+   position: relative;
+   width: 40%;
+   background-color: aquamarine;
+   border: 2px solid #203a43;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.login-form h3 {
+   font-size: 40px;
+   margin-top: 20px;
+}
+
+.form-inputs {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+}
+
+#show-password {
+   transform: scale(1.5);
+}
+.form-inputs button {
+   font-size: 20px;
+   justify-items: center;
+   width: 100px;
+   margin: auto;
+   margin-bottom: 10px;
+}
+
+.login-title h3 {
+   display: inline-block;
+}
+
+.login-title button {
+   position: absolute;
+   right: 40px;
+   top: 25px;
+}
+
+.no-scroll {
+   overflow: hidden;
+}
+
+.header-logout button {
+   color: beige;
+   padding: 8px;
+   background: none;
+   border-radius: 20px;
+   border: 0;
+}
+
+.header-logout button:hover {
+   background-color: #0f2027;
+}
+
+.header-logout-button {
+   width: 100%;
+   display: none;
+   font-size: 20px;
+   color: cyan;
+   width: 100%;
+   height: 30px;
+}
+.header-logout {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.header-logout:hover .header-logout-button {
+   display: block;
+}
+
+@media (max-width: 500px) {
+   .app-title h1 {
+      font-size: 25px;
+   }
+
+   .app-title {
+      padding-left: 25px;
+   }
+
+   .login-form form {
+      /* background-color: #0f2027; */
+      width: 80vw;
+   }
+   .form-inputs {
+      width: 60vw;
+   }
+}
+
+.quiz-start label:hover {
+   cursor: pointer;
+   color: red;
+}
+
+.submit-response {
+   top: 0px;
+   left: 0px;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   z-index: 1000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(5px);
+   flex-direction: column;
+}
+
+#grade-select,
+#difficulty-select {
+   min-width: max-content;
+   padding: 10px 10px;
+   outline: none;
+   border: 2px solid #acbb78;
+   border-radius: 15px;
+}
+
+.user-input input {
+   font-size: 17px;
+   padding: 5px 10px;
+   border: 2px solid #acbb78;
+   border-radius: 15px;
+   outline: none;
+   margin-right: 5px;
+}

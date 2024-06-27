@@ -1,0 +1,12 @@
+.quizzes li:hover {
+   background-color: lightgray;
+   cursor: pointer;
+}
+
+.quiz-details h4 {
+   font-weight: 700;
+}
+
+.quiz-details span {
+   font-weight: 400;
+}
